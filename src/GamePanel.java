@@ -165,6 +165,7 @@ public class GamePanel extends JPanel implements ActionListener {
         public void keyPressed(KeyEvent e) {
             if (e.getKeyCode() == KeyEvent.VK_SPACE) {
                 applesEaten = 0;
+                DELAY = 75;
                 GameFrame gameFrame = new GameFrame();
                 startGame();
                 repaint();
